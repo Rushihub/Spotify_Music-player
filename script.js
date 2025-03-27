@@ -20,13 +20,13 @@ async function getSongs() {
 
 const playMusic = (track) => {
     if (currentSong.src === "/Lec 84/songs/" + track && !currentSong.paused) {
-        // If the song is already playing, don't do anything
+        // song chal rha hai so dont touch it
         return;
     }
 
     // Pause the current song if it's playing
     currentSong.pause();
-    currentSong.currentTime = 0; // Optional: Reset time to the beginning
+    currentSong.currentTime = 0; 
 
     // Set the new track and play it
     currentSong.src = "/Lec 84/songs/" + track;
@@ -58,7 +58,7 @@ async function main() {
                         </li> `;
 
     }
-    //Attach an event listener to each song
+    //Event listner
     Array.from(document.querySelector(".yourPlaylist").getElementsByTagName("li")).forEach(e => {
         e.addEventListener("click", element=>{
 
@@ -69,7 +69,7 @@ async function main() {
 
 
 
-    //Attach an event listener to play, next and previous
+    
    
 
 
