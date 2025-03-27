@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+}
+
+.left {
+    width: 25vw;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 0 0 10px 0px;
+    
+}
+
+.right {
+    width: 75vw;
+}
+
+
+
+.home ul li {
+    width: 25px;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.heading img {
+    width: 25px;
+}
+.home{
+    height: 20%;
+}
+
+.library {
+    height: 80%;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer a {
+    color: #b3aea4;
+    text-decoration: none;
+}
+
+.right {
+    margin: 16px 0;
+    position:relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    height: 50px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 10px;
+}
+.buttons >*{
+    margin: 0 12px;
+}
+.signupBtn{
+background-color: rgb(34,34,34);
+color: rgb(156, 148, 148);
+font-weight: 500px;
+border:none;
+outline:none;
+cursor:pointer;
+}
+.signupBtn:hover{
+    font-size: 14px;
+    color: white;
+}
+
+.loginBtn{
+background-color: white;
+color: black;
+border-radius: 20px;
+font-weight: 600;
+cursor: pointer;
+border: none;
+outline: none;
+padding: 10px;
+width: 80px;
+font-size: 16px;
+}
+.loginBtn:hover{
+    width: 82px;
+    font-weight: 700;
+   font-size: 17px;
+}
+
+
+.spotifyPlaylists {
+    padding: 16px;
+
+}
+
+.cardContainer {
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.card {
+    width: 170px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #121212;
+    position: relative;
+}
+
+.card:hover {
+    background-color: #252525;
+}
+
+.card>* {
+    padding-top: 5px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+
+}
+
+.play {
+    position: absolute;
+    top: 120px;
+    right: 15px;
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+
+
+.playbar{
+    position:fixed;
+    bottom: 10px;
+    background-color: rgb(56, 57, 56);
+    width: 70vw;
+    padding: 5px;
+    border-radius: 5px;
+    height: 45px;
+    
+}
+.songButtons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.songButtons img{
+    cursor: pointer;
+
+}
+.songButtons img:nth-child(2):hover{
+    background-color: white;
+    border-radius: 20px;
+    
+}
+.yourPlaylist{
+    height: 400px;
+    overflow: auto;
+    margin: 20px 0px;
+}
+.yourPlaylist ul{
+    padding: 0px 5px;
+}
+.yourPlaylist .info{
+    font-size: 12px;
+    width: 344px;
+}
+
+.yourPlaylist ul li{
+    list-style-type: decimal;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px 0px;
+    border: 1px solid white;
+border-radius: 5px;
+padding: 5px;
+margin: 5px 0px;
+}
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playnow span{
+    font-size: 12px;
+    width: 64px;
+}
+
+.seekbar{
+    height: 3px;
+    width: 70vw;
+    position: absolute;
+    bottom: 5px;
+    border-radius: 20px;
+    background-color: rgb(18, 17, 17);
+    margin: 2px 0px;
+    
+}
+.circle{
+    height: 13px;
+    width: 13px;
+    border-radius:10px ;
+    background-color: white;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5;
+}

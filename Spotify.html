@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="home bg-gray rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="/Lec 84/Assets/Images/Spotifylogo.svg" alt="Spotifylogo"
+                        width="35px">Spotify</div>
+                <ul>
+
+                    <li><img class="invert" src="/Lec 84/Assets/Images/Homelogo.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="/Lec 84/Assets/Images/Searchlogo.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-gray rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="/Lec 84/Assets/Images/Playlistlibrary.svg" alt="">
+                    <h3>Your Library</h3>
+
+                </div>
+                <div class="yourPlaylist">
+                    <ul>
+            
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a href="https://www.spotify.com/in-en/legal/" class="text-link">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/" class="text-link">Safety & Privacy
+                        Center</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/" class="text-link">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/" class="text-link">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" class="text-link">About Ads</a>
+                    <a href="https://www.spotify.com/in-en/accessibility/" class="text-link">Accessibility</a>
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener"
+                        class="text-link">Cookies</a>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="nav">
+                    <img class="invert" src="/Lec 84/Assets/Images/back-svgrepo-com.svg" alt="" width="20px">
+                    <img class="invert" src="/Lec 84/Assets/Images/next-svgrepo-com (2).svg" alt="" width="20px">
+                </div>
+                <div class="buttons">
+                    <button class="signupBtn">Sign up</button>
+                    <button class="loginBtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h2>Spotify Playlists</h2>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
+                                <circle cx="25" cy="25" r="22.5" fill="#1fdf64" />
+                                <polygon points="17.5,15 17.5,35 32.5,25" fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da843ebc20a9c28c7c6040b5ffae"
+                            alt="">
+                        <h3>Boys Playlist</h3>
+                        <p>Best songs for the boys and gang</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da843ebc20a9c28c7c6040b5ffae"
+                            alt="">
+                        <h3>Boys Playlist</h3>
+                        <p>Best songs for the boys and gang</p>
+                    </div>
+
+
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="songInfo"></div>
+                    <div class="songButtons">
+                        <img id="previous" src="/Lec 84/Assets/Images/play-previous.svg" alt="" width="22px" >
+                        <img id="play" src="/Lec 84/Assets/Images/play.svg" alt="" width="33px">
+                        <img id="next" src="/Lec 84/Assets/Images/play-next.svg" alt="" width="22px">
+                    </div>
+                    <div class="songTime"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
